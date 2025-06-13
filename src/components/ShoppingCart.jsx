@@ -16,11 +16,13 @@ function ShoppingCart({ cart, ordered, onQuantityChange, onRemove, onOrderNow, o
 
   const handleOrderNowClick = () => {
     if (cart.length === 0) return;
-    const phone = '';// Add your WhatsApp number here, e.g. '1234567890'
-    const message = getWhatsAppMessage();
-    // Use wa.me for mobile and web compatibility
-    const url = `https://wa.me/${phone}?text=${message}`;
-    window.open(url, '_blank', 'noopener,noreferrer');
+    let message = 'Order Details:%0A';
+    cart.forEach(item => {
+      message += `${item.name} x ${item.quantity} = $${item.price * item.quantity}%0A`;
+    });
+    message += `%0ATotal: $${total}`;
+    const whatsappUrl = `https://wa.me/message/3MWH77MUFV5RE1?text=${message}`;
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
     onOrderNow();
   };
 
