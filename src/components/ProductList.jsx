@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 
 const localImages = [
-  require('../images/1000278926.jpg'),
-  require('../images/1000278927.jpg'),
-  require('../images/1000278928.jpg'),
-  require('../images/1000278929.jpg'),
+  process.env.PUBLIC_URL + '/images/1000278926.jpg',
+  process.env.PUBLIC_URL + '/images/1000278927.jpg',
+  process.env.PUBLIC_URL + '/images/1000278928.jpg',
+  process.env.PUBLIC_URL + '/images/1000278929.jpg',
 ];
 
 const ProductList = ({ onAddToCart }) => {
