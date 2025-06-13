@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Protein Powder",
+    "price": 399,
+    "thumbnail": "images/1000278926.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Protein Mix",
+    "price": 349,
+    "thumbnail": "images/1000278927.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Protein Malt",
+    "price": 429,
+    "thumbnail": "images/1000278928.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Health Mix",
+    "price": 499,
+    "thumbnail": "images/1000278929.jpg"
+  }
+]
